@@ -1,6 +1,6 @@
 use anyhow::{Result, bail};
-use chacha20poly1305::{ChaCha20Poly1305, Key, Nonce};
-use chacha20poly1305::aead::{Aead, NewAead};
+use chacha20poly1305::{ChaCha20Poly1305, Key, Nonce, KeyInit};
+use chacha20poly1305::aead::Aead;
 use dialoguer::{Select, Password, Input};
 use sha2::{Digest, Sha512};
 
