@@ -105,6 +105,7 @@ struct KeyAndNonce {
     pub nonce: Nonce,
 }
 
+// TODO: consider using `generate_key` or `generate_nonce` or salting the password
 impl KeyAndNonce {
     /// Creates a Key and Nonce from the given password in the following way:
     /// 1) Hash the password with SHA512
